@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+}
+
+.App {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Habit List */
+#habit-section {
+  margin-bottom: 30px;
+}
+
+.habit-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.habit {
+  background-color: #f9f9f9;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.habit:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.habit h3 {
+  color: #333;
+}
+
+.progress {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+/* Add Habit Button */
+#add-habit {
+  background-color: #28a745;
+  color: white;
+}
+
+#add-habit:hover {
+  background-color: #218838;
+}
+
+/* Mark as Done Button */
+.update-habit {
+  background-color: #007bff;
+  color: white;
+}
+
+.update-habit:hover {
+  background-color: #0056b3;
+}
+
+/* Accountability Partner Section */
+#partner-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#partner-info {
+  margin-top: 10px;
+}
+
+#find-partner {
+  background-color: #ff5722;
+  color: white;
+}
+
+#find-partner:hover {
+  background-color: #e64a19;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Calendar styling */
+.calendar {
+  margin-top: 10px;
+}
+
+.calendar h4 {
+  margin-bottom: 10px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns for days of the week */
+  gap: 5px;
+}
+
+.calendar-day {
+  background-color: #f4f4f4;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.calendar-day.completed {
+  background-color: #28a745;
+  color: white;
+}
+
+.calendar-day:hover {
+  background-color: #ddd;
+}
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-day {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  cursor: pointer;
+}
+
+.calendar-day.completed {
+  background-color: #4caf50;
+  color: white;
+}
